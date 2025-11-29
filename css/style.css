@@ -1,3 +1,74 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* 大見出し */
+h2{
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #0b446f;
+}
+
+/* 中見出し */
+h3{
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #0b446f;
+}
+
+/* 本文 */
+p{
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0b446f;
+}
+
+/* 英数字フォント */
+.hepta{
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #0b446f;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* バナー本体 */
+.loop-wrap {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 50px;
+  background: #fff;
+  border-bottom: 2px solid #0b446f;
+}
+.loop-area {
+  display: flex;
+  animation: loop-slide 50s infinite linear 1s both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.loop-area .content {
+  width: 300px;
+  color: #0b446f;
+  font-size: 0.75rem;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
